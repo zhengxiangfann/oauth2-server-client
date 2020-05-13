@@ -26,8 +26,8 @@ oauth = OAuth(app, update_token=update_token)
 
 oauth.register(
     name='o2',
-    client_id='1whrxAbdQdVuuX6YpXbXydtY',
-    client_secret='9vmVJnuK9mueSpObFiFAPzmyJqCTvpyFb6zFBb4rk2OkYY49',
+    client_id='Z8F6XDenRQS6SsDgS241mqWV',
+    client_secret='s9isCkq6Zo0SNgEqbo1riGusZEcXLDKeBCGCoY9GOlxMxYW1',
     request_token_url=None,
     # request_token_params={'expires_in':3600},
     request_token_params=None,
