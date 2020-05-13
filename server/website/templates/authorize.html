@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>服务端</title>
+</head>
+
+<body>
+<p>服务端授权:<strong>{{grant.client.client_name}}</strong> 如下:
+<strong>{{ grant.request.scope }}</strong>
+</p>
+
+<p>
+  来自 <strong>{{ user.username }}</strong>的请求
+</p>
+
+<form action="" method="post">
+  <label>
+    <input type="checkbox" name="confirm">
+    <span>同意?</span>
+  </label>
+  {% if not user %}
+  <p>您还没有登录:</p>
+  <div>
+    <input type="text" name="username">
+  </div>
+  {% endif %}
+  <br>
+  <button>确认</button>
+</form>
+</body>
+</html>
+
